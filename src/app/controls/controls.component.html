@@ -1,0 +1,338 @@
+<div style="text-align: center;"><h1>Material controls!</h1></div>
+
+<div class="content-block text-center"> PRIMARY
+  <div class="p50 text-center">50</div>
+  <div class="p100 text-center">100</div>
+  <div class="p200 text-center">200</div>
+  <div class="p300 text-center">300</div>
+  <div class="p400 text-center">400</div>
+  <div class="p500 text-center">500</div>
+  <div class="p600 text-center">600</div>
+  <div class="p700 text-center">700</div>
+  <div class="p800 text-center">800</div>
+  <div class="p900 text-center">900</div>
+  <div class="pa100 text-center">A100</div>
+  <div class="pa200 text-center">A200</div>
+  <div class="pa400 text-center">A300</div>
+  <div class="pa700 text-center">A400</div>
+</div>
+
+<div class="content-block text-center"> ACCENT
+  <div class="ap50 text-center">50</div>
+  <div class="ap100 text-center">100</div>
+  <div class="ap200 text-center">200</div>
+  <div class="ap300 text-center">300</div>
+  <div class="ap400 text-center">400</div>
+  <div class="ap500 text-center">500</div>
+  <div class="ap600 text-center">600</div>
+  <div class="ap700 text-center">700</div>
+  <div class="ap800 text-center">800</div>
+  <div class="ap900 text-center">900</div>
+  <div class="apa100 text-center">A100</div>
+  <div class="apa200 text-center">A200</div>
+  <div class="apa400 text-center">A300</div>
+  <div class="apa700 text-center">A400</div>
+</div>
+
+<div class="content-block text-center"> HUES
+  <div class="hp-darker text-center">darker</div>
+  <div class="hp-lighter text-center">lighter</div>
+  <div class="hp-default text-center">default</div>
+  <div class="hp-text text-center">text</div>
+</div>
+
+
+<div class="content-block">
+  <mat-chip-listbox class="mat-mdc-chip-set-stacked" aria-label="Color selection">
+    <mat-chip-option selected [color]='"500"'>unknown</mat-chip-option>
+    <mat-chip-option selected [color]='"primary"'>primary</mat-chip-option>
+    <mat-chip-option selected [color]='"accent"'>accent</mat-chip-option>
+    <mat-chip-option selected [color]='"warn"'>warn</mat-chip-option>
+  </mat-chip-listbox>
+</div>
+
+<div class="content-block">
+  <section class="checkboxes-section">
+    <mat-checkbox class="example-margin">Checked</mat-checkbox>
+  </section>
+</div>
+
+<div class="content-block">
+  <div style="margin-right: 50px;">
+    <div matBadge="4" matBadgeOverlap="false" class="demo-section">Text with a badge</div>
+    <div matBadge="1" matBadgeSize="large" class="demo-section">Text with large badge</div>
+  </div>
+
+  <div class="demo-section">
+    Button with a badge on the left
+    <button mat-raised-button color="primary"
+        matBadge="8" matBadgePosition="before" matBadgeColor="accent">
+      Action
+    </button>
+  </div>
+
+  <div class="demo-section">
+    Icon with a badge
+    <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+      <!-- Include text description of the icon's meaning for screen-readers -->
+      <span class="cdk-visually-hidden">
+        Example with a home icon with overlaid badge showing the number 15
+      </span>
+  </div>
+</div>
+
+<div class="content-block">
+  <div class="example-button-row">
+    <button mat-raised-button>Basic</button>
+    <button mat-raised-button color="primary">Primary</button>
+    <button mat-raised-button color="accent">Accent</button>
+    <button mat-raised-button color="warn">Warn</button>
+    <button mat-raised-button disabled>Disabled</button>
+    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
+  </div>
+</div>
+
+<div class="content-block">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="bold">Bold</mat-button-toggle>
+    <mat-button-toggle value="italic">Italic</mat-button-toggle>
+    <mat-button-toggle value="underline">Underline</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<div class="content-block">
+  <mat-form-field appearance="fill">
+    <mat-label>Choose a date</mat-label>
+    <input matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div>
+
+<div class="content-block">
+  <mat-list>
+    <mat-list-item>Item 1</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>Item 2</mat-list-item>
+    <mat-divider></mat-divider>
+    <mat-list-item>Item 3</mat-list-item>
+  </mat-list>
+</div>
+
+<div class="content-block">
+  <mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Personal data
+        </mat-panel-title>
+        <mat-panel-description>
+          Type your name and age
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>First name</mat-label>
+        <input matInput>
+      </mat-form-field>
+  
+      <mat-form-field appearance="fill">
+        <mat-label>Age</mat-label>
+        <input matInput type="number" min="1">
+      </mat-form-field>
+  
+    </mat-expansion-panel>
+    
+  </mat-accordion>
+</div>
+
+<div class="content-block">
+  <mat-form-field appearance="fill">
+    <mat-label>Input</mat-label>
+    <input matInput>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="fill">
+    <mat-label>Select</mat-label>
+    <mat-select>
+      <mat-option value="one">First option</mat-option>
+      <mat-option value="two">Second option</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <br/>
+  <mat-form-field appearance="fill">
+    <mat-label>Textarea</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+</div>
+
+<div class="content-block">
+  <mat-list>
+    <div mat-subheader>Folders</div>
+    <mat-list-item>
+      <mat-icon matListItemIcon>folder</mat-icon>
+      <div matListItemTitle>Name</div>
+      <div matListItemLine>some date</div>
+    </mat-list-item>
+    <mat-list-item>
+      <mat-icon matListItemIcon>folder</mat-icon>
+      <div matListItemTitle>Name 2</div>
+      <div matListItemLine>some date 2</div>
+    </mat-list-item>
+  </mat-list>
+</div>
+
+<div class="content-block">
+  <mat-selection-list #shoes>
+    <mat-list-option>111</mat-list-option>
+    <mat-list-option>222</mat-list-option>
+    <mat-list-option>333</mat-list-option>
+  </mat-selection-list>
+</div>
+
+<div class="content-block">
+  <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Item 1</button>
+    <button mat-menu-item>Item 2</button>
+  </mat-menu>
+</div>
+
+<div class="content-block">
+  <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+  </mat-paginator>
+</div>
+
+<div class="content-block">
+  <mat-progress-bar style="margin-bottom: 20px;" mode="determinate" value="40"></mat-progress-bar>
+  <mat-progress-bar style="margin-bottom: 20px;" mode="indeterminate"></mat-progress-bar>
+  <mat-progress-bar style="margin-bottom: 20px;" mode="query"></mat-progress-bar>
+  <mat-spinner></mat-spinner>
+</div>
+
+<div class="content-block">
+  <mat-radio-group aria-label="Select an option">
+    <mat-radio-button value="1">Option 1</mat-radio-button>
+    <mat-radio-button value="2">Option 2</mat-radio-button>
+  </mat-radio-group>
+</div>
+
+<div class="content-block">
+  <div class="mat-elevation-z4"
+     style="height: 100px;"
+     matRipple
+     [matRippleCentered]="false"
+     [matRippleDisabled]="false"
+     [matRippleUnbounded]="false"
+     [matRippleRadius]="500">
+  Click me
+  </div>
+</div>
+
+<div class="content-block">
+  <mat-form-field appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+      <mat-option>1</mat-option>
+      <mat-option>2</mat-option>
+      <mat-option>3</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="content-block">
+  <mat-slide-toggle
+          class="example-margin"
+          [color]='"accent"'>
+        Slide me!
+  </mat-slide-toggle>
+  <mat-slide-toggle
+      class="example-margin"
+      [color]='"primary"'>
+    Slide me!
+  </mat-slide-toggle>
+</div>
+
+<div class="content-block">
+  <mat-slider min="0" max="5" step="1" showTickMarks discrete>
+    <input matSliderThumb>
+  </mat-slider>
+</div>
+
+<div class="content-block">
+  <mat-tab-group>
+    <mat-tab label="First"> Content 1 </mat-tab>
+    <mat-tab label="Second"> Content 2 </mat-tab>
+    <mat-tab label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+</div>
+
+
+<div class="content-block">
+  <p>
+    <mat-toolbar>
+      <span>My Application</span>
+    </mat-toolbar>
+  </p>
+  
+  <p>
+    <mat-toolbar>
+     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+     <mat-icon>share</mat-icon>
+   </button>
+  </mat-toolbar>
+  </p>
+  
+  <p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My App</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+  </p>
+  
+  <p>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        <span>My App</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
+  
+      <mat-toolbar-row>
+        <span>Second Line</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>share</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </p>
+</div>
+

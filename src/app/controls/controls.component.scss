@@ -1,0 +1,144 @@
+@use '@angular/material' as mat;
+@import '../../theme.scss';
+
+:host {
+  .content-block {
+    padding: 10px;
+  }
+
+  .mat-mdc-list-item-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .p50 {
+    background-color: mat.get-color-from-palette($theme-primary, 50);
+    color: mat.get-color-from-palette($theme-primary, 50-contrast);
+  }
+  .p100 {
+    background-color: mat.get-color-from-palette($theme-primary, 100);
+    color: mat.get-color-from-palette($theme-primary, 100-contrast);
+  }
+  .p200 {
+    background-color: mat.get-color-from-palette($theme-primary, 200);
+    color: mat.get-color-from-palette($theme-primary, 200-contrast);
+  }
+  .p300 {
+    background-color: mat.get-color-from-palette($theme-primary, 300);
+    color: mat.get-color-from-palette($theme-primary, 300-contrast);
+  }
+  .p400 {
+    background-color: mat.get-color-from-palette($theme-primary, 400);
+    color: mat.get-color-from-palette($theme-primary, 400-contrast);
+  }
+  .p500 {
+    background-color: mat.get-color-from-palette($theme-primary, 500);
+    color: mat.get-color-from-palette($theme-primary, 500-contrast);
+  }
+  .p600 {
+    background-color: mat.get-color-from-palette($theme-primary, 600);
+    color: mat.get-color-from-palette($theme-primary, 600-contrast);
+  }
+  .p700 {
+    background-color: mat.get-color-from-palette($theme-primary, 700);
+    color: mat.get-color-from-palette($theme-primary, 700-contrast);
+  }
+  .p800 {
+    background-color: mat.get-color-from-palette($theme-primary, 800);
+    color: mat.get-color-from-palette($theme-primary, 800-contrast);
+  }
+  .p900 {
+    background-color: mat.get-color-from-palette($theme-primary, 900);
+    color: mat.get-color-from-palette($theme-primary, 900-contrast);
+  }
+  .pa100 {
+    background-color: mat.get-color-from-palette($theme-primary, A100);
+    color: mat.get-color-from-palette($theme-primary, A100-contrast);
+  }
+  .pa200 {
+    background-color: mat.get-color-from-palette($theme-primary, A200);
+    color: mat.get-color-from-palette($theme-primary, A200-contrast);
+  }
+  .pa400 {
+    background-color: mat.get-color-from-palette($theme-primary, A400);
+    color: mat.get-color-from-palette($theme-primary, A400-contrast);
+  }
+  .pa700 {
+    background-color: mat.get-color-from-palette($theme-primary, A700);
+    color: mat.get-color-from-palette($theme-primary, A700-contrast);
+  }
+
+  .ap50 {
+    background-color: mat.get-color-from-palette($theme-accent, 50);
+    color: mat.get-color-from-palette($theme-accent, 50-contrast);
+  }
+  .ap100 {
+    background-color: mat.get-color-from-palette($theme-accent, 100);
+    color: mat.get-color-from-palette($theme-accent, 100-contrast);
+  }
+  .ap200 {
+    background-color: mat.get-color-from-palette($theme-accent, 200);
+    color: mat.get-color-from-palette($theme-accent, 200-contrast);
+  }
+  .ap300 {
+    background-color: mat.get-color-from-palette($theme-accent, 300);
+    color: mat.get-color-from-palette($theme-accent, 300-contrast);
+  }
+  .ap400 {
+    background-color: mat.get-color-from-palette($theme-accent, 400);
+    color: mat.get-color-from-palette($theme-accent, 400-contrast);
+  }
+  .ap500 {
+    background-color: mat.get-color-from-palette($theme-accent, 500);
+    color: mat.get-color-from-palette($theme-accent, 500-contrast);
+  }
+  .ap600 {
+    background-color: mat.get-color-from-palette($theme-accent, 600);
+    color: mat.get-color-from-palette($theme-primary, 600-contrast);
+  }
+  .ap700 {
+    background-color: mat.get-color-from-palette($theme-accent, 700);
+    color: mat.get-color-from-palette($theme-accent, 700-contrast);
+  }
+  .ap800 {
+    background-color: mat.get-color-from-palette($theme-accent, 800);
+    color: mat.get-color-from-palette($theme-accent, 800-contrast);
+  }
+  .ap900 {
+    background-color: mat.get-color-from-palette($theme-accent, 900);
+    color: mat.get-color-from-palette($theme-accent, 900-contrast);
+  }
+  .apa100 {
+    background-color: mat.get-color-from-palette($theme-accent, A100);
+    color: mat.get-color-from-palette($theme-accent, A100-contrast);
+  }
+  .apa200 {
+    background-color: mat.get-color-from-palette($theme-accent, A200);
+    color: mat.get-color-from-palette($theme-accent, A200-contrast);
+  }
+  .apa400 {
+    background-color: mat.get-color-from-palette($theme-accent, A400);
+    color: mat.get-color-from-palette($theme-accent, A400-contrast);
+  }
+  .apa700 {
+    background-color: mat.get-color-from-palette($theme-accent, A700);
+    color: mat.get-color-from-palette($theme-accent, A700-contrast);
+  }
+  .hp-darker {
+    background: mat.get-color-from-palette($theme-primary, 'darker');
+    color: mat.get-color-from-palette($theme-primary, 'darker-contrast');
+  }
+  .hp-lighter {
+    background: mat.get-color-from-palette($theme-primary, 'lighter');
+    color: mat.get-color-from-palette($theme-primary, 'lighter-contrast');
+  }
+  .hp-default {
+    background: mat.get-color-from-palette($theme-primary, 'default');
+    color: mat.get-color-from-palette($theme-primary, 'default-contrast');
+  }
+  .hp-text {
+    background: mat.get-color-from-palette($theme-primary, 'text');
+    color: mat.get-color-from-palette($theme-primary, 'text-contrast');
+  }
+}
